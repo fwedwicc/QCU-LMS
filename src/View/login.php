@@ -12,7 +12,7 @@
   <div class="parent h-screen">
     <!-- Left side itey -->
     <div class="div1 relative">
-      <img src="qcu-image-login.png" alt="" class="object-cover w-full h-full">
+      <img src="qcu-image-login.png" class="object-cover w-full h-full" alt="QCU Photography by Joanah my bb" >
     </div>
     <!-- Right side itey -->
     <div class="div2 flex flex-col p-11"> 
