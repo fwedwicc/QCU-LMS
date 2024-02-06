@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QCU-Learning Management System | Login</title>
+  <title>QCU-Learning Management System | Student Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../../../public/assets/css/login.css">
 </head>
 <body class="bg-gray-900">
   <div class="parent h-screen">
     <!-- Left side itey -->
     <div class="div1 relative">
-      <img src="qcu-image-login.png" class="object-cover w-full h-full" alt="QCU Photography by Joanah my bb" >
+      <img src="../../../public/assets/img/qcu-image-login.png" class="object-cover w-full h-full" alt="QCU Photography by Joanah my bb" >
     </div>
     <!-- Right side itey -->
     <div class="div2 flex flex-col p-11"> 
       <span class="inline-flex">
-        <img src="qcu-logo-lms.png" alt="Quezon City University Logo" class="h-9 w-auto mr-6">
+        <img src="../../../public/assets/img/qcu-logo-lms.png" alt="Quezon City University Logo" class="h-9 w-auto mr-6">
         <h3 class="font-medium text-gray-900 dark:text-white text-2xl mb-5">Learning Management System</h3>
       </span>
       <!-- Login Form -->
