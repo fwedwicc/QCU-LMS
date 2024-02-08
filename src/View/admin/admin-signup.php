@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 </head>
+<!-- Admin side and navigation bar -->
 <?php
   include_once 'admin.php';
 ?>
@@ -14,7 +15,7 @@
   <div class="p-4 sm:ml-64">
     <div class="p-12 dark:border-gray-700 mt-14">
       <div class="gap-4 mb-4">
-
+        <!-- Create account form -->
         <form>
           <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-9">Create an account</h1>
           <div class="grid gap-6 mb-6 md:grid-cols-2">
