@@ -38,8 +38,8 @@
               <!-- Dropdown menu -->
               <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
-                  <div>Bonnie Green</div>
-                  <div class="font-medium truncate">name@flowbite.com</div>
+                  <div>Juan Dela Cruz</div>
+                  <div class="font-medium truncate">juan.dela.criz@gmail.com</div>
                 </div>
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
                   <li>
@@ -49,7 +49,7 @@
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Help</a>
                   </li>
                 </ul>
                 <div class="py-2">
@@ -97,16 +97,31 @@
         </button>
         <ul id="dropdown-programs" class="hidden py-2 space-y-2">
           <li>
-            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSIT</a>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSENT</a>
           </li>
           <li>
             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSA</a>
           </li>
           <li>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSMA</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSIE</a>
+          </li>
+          <li>
             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSECE</a>
           </li>
           <li>
-            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSENT</a>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSIT</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSCS</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSIS</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">BSCE</a>
           </li>
         </ul>
         <!-- Users dropdown -->
@@ -124,7 +139,7 @@
             <a href="admin-user-student.php" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Student</a>
           </li>
           <li>
-            <a href="admin-user-instructor.php" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Professor</a>
+            <a href="admin-user-instructor.php" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Instructor</a>
           </li>
           <li>
             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Admin</a>
@@ -134,6 +149,37 @@
       </ul>
     </div>
   </aside>
+  <script>
+    // JS for state persistence of dropdown in sidebar
+    document.addEventListener("DOMContentLoaded", function() {
+      const dropdownButtons = document.querySelectorAll('[data-collapse-toggle]');
+
+      // Check and set the initial state based on localStorage
+      dropdownButtons.forEach((button) => {
+        const dropdownId = button.getAttribute('data-collapse-toggle');
+        const dropdown = document.getElementById(dropdownId);
+
+        const isDropdownOpen = localStorage.getItem(dropdownId) === 'true';
+
+        if (isDropdownOpen) {
+          dropdown.classList.remove('hidden');
+        }
+      });
+
+      // Toggle dropdown visibility and store the state in localStorage
+      dropdownButtons.forEach((button) => {
+        button.addEventListener('click', function() {
+          const dropdownId = this.getAttribute('data-collapse-toggle');
+          const dropdown = document.getElementById(dropdownId);
+
+          dropdown.classList.toggle('hidden');
+
+          const isDropdownOpen = !dropdown.classList.contains('hidden');
+          localStorage.setItem(dropdownId, isDropdownOpen.toString());
+        });
+      });
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
