@@ -29,7 +29,7 @@ include_once 'admin.php';
             Register
           </button>
           <!-- Main modal -->
-          <div id="register-modal" tabindex="-1" class="fixed top-30 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div id="register-modal" data-modal-backdrop="static" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
             <div class="relative w-full max-w-4xl max-h-full">
               <!-- Modal content -->
               <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -38,7 +38,7 @@ include_once 'admin.php';
                   <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
                     Create an account
                   </h1>
-                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="large-modal">
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="register-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                     </svg>
@@ -52,7 +52,7 @@ include_once 'admin.php';
                   <div class="grid gap-6 mb-6 md:grid-cols-7">
                     <div class="col-span-2">
                       <label for="student-number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student number</label>
-                      <input type="text" id="student-number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+                      <input type="number" id="student-number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" pattern="[0-9]{2}-[0-9]{4}" placeholder="12-3456" required>
                     </div>
                   </div>
                   <!-- Personal data section -->
@@ -64,22 +64,22 @@ include_once 'admin.php';
                     <!-- First name -->
                     <div class="col-span-2">
                       <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                      <input type="text" id="first-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+                      <input type="text" id="first-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan" required>
                     </div>
                     <!-- Middle name -->
                     <div class="col-span-2">
                       <label for="middle-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Middle name</label>
-                      <input type="text" id="middle-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
+                      <input type="text" id="middle-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela">
                     </div>
                     <!-- Last name -->
                     <div class="col-span-2">
                       <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                      <input type="text" id="last-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required>
+                      <input type="text" id="last-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela Cruz" required>
                     </div>
                     <!-- Suffix -->
                     <div class="col-span-1">
                       <label for="suffix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suffix</label>
-                      <select id="suffix" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm px-5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500">
+                      <select id="suffix" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm px-5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500">
                         <option value="" selected>Select</option>
                         <option value="Jr.">Jr.</option>
                         <option value="Sr.">Sr.</option>
@@ -111,36 +111,50 @@ include_once 'admin.php';
                   <div class="grid gap-6 mb-6 md:grid-cols-7">
                     <!-- Program -->
                     <div class="col-span-2">
-                      <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program</label>
-                      <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+                      <label for="program" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program</label>
+                      <select id="program" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="BSENT">BSENT</option>
+                        <option value="BSA">BSA</option>
+                        <option value="BSMA">BSMA</option>
+                        <option value="BSIE">BSIE</option>
+                        <option value="BSECE">BSECE</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="BSCS">BSCS</option>
+                        <option value="BSIS">BSIS</option>
+                        <option value="BSCE">BSCE</option>
+                      </select>
                     </div>
                     <!-- Year level -->
                     <div class="col-span-2">
-                      <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
-                      <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
-<!-- 
-                      <label for="suffix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
-                      <select id="suffix" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm px-5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
-                        <option value="" selected>Select</option>
-                        <option value="1st.">1st year</option>
-                        <option value="2nd">2nd year</option>
-                        <option value="3rd">3rd year</option>
-                        <option value="4th">4th year</option>
-                      </select> -->
-
+                      <label for="year-level" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
+                      <select id="year-level" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="1st-year">1st year</option>
+                        <option value="2nd-year">2nd year</option>
+                        <option value="3rd-year">3rd year</option>
+                        <option value="4th-year">4th year</option>
+                        <option value="Irregular">Irregular</option>
+                      </select>
                     </div>
                     <!-- Classification -->
                     <div class="col-span-2">
-                      <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Classification</label>
-                      <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required>
+                      <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Classification</label>
+                      <div class="flex mt-4">
+                        <div class="flex items-center me-10">
+                          <input id="regular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" required>
+                          <label for="regular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Regular</label>
+                        </div>
+                        <div class="flex items-center me-4">
+                          <input id="irregular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" required>
+                          <label for="irregular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Irregular</label>
+                        </div>
+                      </div>
                     </div>
+                    <!-- Section -->
                     <div class="col-span-1">
-                      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Section</label>
-                      <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                    </div>
-                    <div class="col-span-2">
-                      <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of birth</label>
-                      <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
+                      <label for="section" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Section</label>
+                      <input type="text" id="section" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="SBIT-1A" required>
                     </div>
                   </div>
                   <!-- Account data section -->
@@ -149,22 +163,23 @@ include_once 'admin.php';
                     Account
                   </h3>
                   <div class="grid gap-6 mb-6 md:grid-cols-7">
+                    <!-- Email address -->
                     <div class="col-span-2">
-                      <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program</label>
-                      <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                      <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="juan.dela.cruz@gmail.com" required>
                     </div>
+                    <!-- Username -->
                     <div class="col-span-2">
-                      <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
-                      <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
+                      <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
+                      <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan123" required>
                     </div>
+                    <!-- Temporary password -->
                     <div class="col-span-2">
-                      <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Classification</label>
-                      <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required>
+                      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temporary password</label>
+                      <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
                     </div>
                   </div>
-
                 </form>
-
                 <!-- Modal footer -->
                 <div class="flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
                   <button data-modal-hide="large-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
@@ -190,28 +205,25 @@ include_once 'admin.php';
                   <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSENT</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSMA</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIE</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSECE</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIT</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCS</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIS</button>
                 </li>
                 <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
-                </li>
-                <li>
-                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                  <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCE</button>
                 </li>
               </ul>
             </div>
