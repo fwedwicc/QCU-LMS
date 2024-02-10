@@ -7,10 +7,12 @@
   <title>QCU-Learning Management System | Admin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../public/assets/css/scrollbar.css">
+  <link rel="icon" type="image/png" href="../../../public/assets/img/qcu-logo-lms.png"/>
 </head>
 <!-- Admin side and navigation bar -->
 <?php
-include_once '../../../templates/layout/admin.php';
+include_once './admin.php';
 ?>
 
 <body>
@@ -31,7 +33,7 @@ include_once '../../../templates/layout/admin.php';
 
           <!-- Search and filter bar -->
           <div class="flex">
-            <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your #</label>
+            <!-- <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your #</label> -->
             <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">All programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
               </svg></button>

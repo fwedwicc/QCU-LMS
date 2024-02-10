@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
   <link rel="stylesheet" href="../../../public/assets/css/login.css">
+  <link rel="icon" type="image/png" href="../../../public/assets/img/qcu-logo-lms.png"/>
 </head>
 <body class="bg-gray-900">
   <div class="parent h-screen">
