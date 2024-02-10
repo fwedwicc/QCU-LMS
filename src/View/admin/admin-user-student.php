@@ -244,7 +244,7 @@ include_once './admin.php';
         </div>
         <!-- Main table of students list -->
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-          <div class="max-h-[400px] overflow-y-auto">
+          <div class="max-h-[410px] overflow-y-auto">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
               <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
                 <tr>
