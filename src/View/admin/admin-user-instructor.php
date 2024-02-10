@@ -10,7 +10,7 @@
 </head>
 <!-- Admin side and navigation bar -->
 <?php
-include_once 'admin.php';
+include_once '../../../templates/layout/admin.php';
 ?>
 
 <body>
