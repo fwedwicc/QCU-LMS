@@ -21,7 +21,7 @@
     <div class="col-span-1 p-12">
       <span class="inline-flex">
         <img src="../../../public/assets/img/qcu-logo-lms.png" alt="Quezon City University Logo" class="h-9 w-auto mr-6">
-        <h3 class="font-medium text-gray-900 dark:text-white text-2xl mb-5">QCU-LMS</h3>
+        <h3 class="font-medium text-gray-900 dark:text-white text-2xl">QCU-LMS</h3>
       </span>
       <!-- Greeting -->
       <div class="flex-col flex items-center justify-center h-full">
@@ -54,12 +54,12 @@
             <div class="flex items-start">
               <div class="flex items-start">
                 <div class="flex items-center h-5">
-                  <input id="remember" type="checkbox" onclick="togglePasswordVisibility()" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                  <input id="remember" type="checkbox" onclick="togglePasswordVisibility()" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 cursor-pointer" required>
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Show Password</label>
               </div>
               <!-- Optional kemeruts -->
-              <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+              <!-- <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
             </div>
             <!-- Login Button -->
             <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
@@ -90,31 +90,28 @@
           </form>
         </div>
         <!-- Footer -->
-        <span id="year" class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-9"></span>
+        <span id="year" class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-11"></span>
         <!-- Popover for QCU Website footer -->
         <div data-popover id="qcu-popover" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
           <div class="grid grid-cols-5">
             <div class="col-span-3 p-3">
               <div class="space-y-2">
                 <h3 class="font-semibold text-gray-900 dark:text-white">About Quezon City University</h3>
-                <p>Italy is located in the middle of the Mediterranean Sea, in Southern Europe it is also considered part of Western Europe. A unitary parliamentary republic with Rome as its capital and largest city.</p>
+                <p>Quezon City University, formerly known as Quezon City Polytechnic University, is a city government-funded university in Quezon City, Philippines. It was established on March 1, 1994, as the Quezon City Polytechnic, offering technical and vocational courses.</p>
                 <a href="https://qcu.edu.ph/" target="_blank" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                   </svg></a>
               </div>
             </div>
-            <img src="/docs/images/popovers/italy.png" class="h-full col-span-2" alt="Italy map" />
+            <img src="../../../public/assets/img/qcu-map-preview.png" class="h-full object-cover col-span-2" alt="QCU map" />
+            <!-- Nasisira responsiveness pag nag embed ng map omai -->
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15436.896375439417!2d121.0325339!3d14.6999155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d899095555%3A0x523cb309be95e9a6!2sQuezon%20City%20University!5e0!3m2!1sen!2sph!4v1707633815719!5m2!1sen!2sph" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full col-span-2" alt="QCU map"></iframe> -->
           </div>
           <div data-popper-arrow></div>
         </div>
       </div>
     </div>
   </div>
-  <style>
-    body::-webkit-scrollbar {
-      width: 0;
-    }
-  </style>
   <script>
     // For password visibility
     function togglePasswordVisibility() {
