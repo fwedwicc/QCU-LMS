@@ -62,7 +62,7 @@
       </span>
       <!-- Greeting -->
       <div class="flex-col flex items-center justify-center h-full">
-        <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-8">Welcome, QCUians!</h1>
+        <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-8">Welcome, QCians!</h1>
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <!-- Form -->
           <form class="space-y-4" action="#">
