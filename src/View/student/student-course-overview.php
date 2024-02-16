@@ -19,10 +19,10 @@ include_once './student.php';
   <div class="p-4 sm:ml-64">
     <div class="p-4 mt-14">
       <div class="gap-4 mb-4">
-        <div class="grid gap-6 md:grid-cols-4">
+        <div class="grid gap-6 md:grid-cols-4 sm:grid-cols-1">
 
           <!-- Will modify -->
-          <div class="col-span-3">
+          <div class="md:col-span-3">
             <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
               <h2 id="accordion-color-heading-1">
                 <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
@@ -74,16 +74,16 @@ include_once './student.php';
             </div>
           </div>
           <!-- right side -->
-          <div class="col-span-1 space-y-6 w-auto h-auto">
+          <div class="md:col-span-1 w-auto space-y-6">
 
-            <a href="#" class="block w-auto p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <a href="#" class="inline-block w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Welcome, <span>Juan!</span></h5>
               <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
             </a>
 
             <!-- <div inline-datepicker data-date="02/25/2022" class="w-1/2 h-auto"></div> -->
-            <a href="#" class="block w-auto p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 max-h-auto">
+            <a href="#" class="inline-block w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 max-h-auto">
 
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Welcome, <span>Juan!</span></h5>
               <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
