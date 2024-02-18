@@ -18,13 +18,19 @@
       <span class="inline-flex mb-11">
         <img src="../../public/assets/img/qcu-logo-lms.png" alt="Quezon City University Logo" class="h-24 w-auto mr-4">
       </span>
-      <h1 class="font-bold text-gray-900 dark:text-white text-5xl mb-8">Quezon City University</h1>
-
-      <div class="grid grid-cols-3 space-x-6 my-16">
-        <!-- Form -->
-        
-
-      </div>
+      <h1 class="font-bold text-gray-900 dark:text-white lg:text-5xl text-2xl mb-8">Quezon City University</h1>
+        <!-- Links -->
+        <div class="inline-flex rounded-md shadow-lg mt-12">
+          <a href="../View/student/student-login.php" class="lg:px-10 lg:py-4 lg:text-base px-6 py-3 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+            Student
+          </a>
+          <a href="../View/instructor/instructor-login.php" class="lg:px-10 lg:py-4 lg:text-base px-6 py-3 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+            Instructor
+          </a>
+          <a href="../View/admin/admin-login.php" class="lg:px-10 lg:py-4 lg:text-base px-6 py-3 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
+            Admin
+          </a>
+        </div>
       <!-- Footer -->
       <span id="year" class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-11"></span>
       <!-- Popover for QCU Website footer -->
