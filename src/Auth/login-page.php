@@ -4,23 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QCU-Learning Management System | Admin Login</title>
+  <title>QCU-Learning Management System | Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../../public/assets/css/scrollbar.css">
-  <link rel="icon" type="image/png" href="../../../public/assets/img/qcu-logo-lms.png" />
+  <link rel="icon" type="image/png" href="../../public/assets/img/qcu-logo-lms.png" />
 </head>
 
 <body class="bg-gray-900">
+  <div class="h-screen grid md:grid-cols-2">
+    <!-- Left side itey -->
+    <div class="col-span-1 hidden md:block">
+      <div id="default-carousel" class="relative object-cover w-full h-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden">
+          <!-- Picture 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image1-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+          <!-- Picture 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image2-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+          </div>
+          <!-- Picture 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image3-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+          <!-- Picture 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image4-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+          </div>
+          <!-- Picture 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image5-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+          <!-- Picture 6 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../../public/assets/img/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5"></button>
+        </div>
+      </div>
+    </div>
     <!-- Right side itey -->
-    <div class="p-12 flex items-center justify-center h-screen">
-      <!-- Greeting -->
-      <div class="flex-col flex items-center w-full max-w-md">
-      <span class="inline-flex mb-11">
-        <img src="../../../public/assets/img/qcu-logo-lms.png" alt="Quezon City University Logo" class="h-9 w-auto mr-4">
+    <div class="col-span-1 p-12">
+      <span class="inline-flex">
+        <img src="../../public/assets/img/qcu-logo-lms.png" alt="Quezon City University Logo" class="h-9 w-auto mr-6">
         <h3 class="font-medium text-gray-900 dark:text-white text-2xl">QCU-LMS</h3>
       </span>
-        <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-8">Welcome, Admins!</h1>
+      <!-- Greeting -->
+      <div class="flex-col flex items-center justify-center h-full">
+        <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-8">Welcome, QCians!</h1>
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <!-- Form -->
           <form class="space-y-4" action="#">
@@ -60,15 +102,15 @@
             <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
             <!-- Login link kemeruts -->
             <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-              Are you <a href="../student/student-login.php" data-popover-target="student-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Student</a> or <a href="../instructor/instructor-login.php" data-popover-target="instructor-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Instructor</a>?
+              Are you <a href="../instructor/instructor-login.php" data-popover-target="instructor-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Instructor</a> or <a href="../admin/admin-login.php" data-popover-target="admin-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Admin</a>?
             </div>
-            <!-- Popver for student login link -->
-            <div data-popover id="student-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+            <!-- Popver for admin login link -->
+            <div data-popover id="admin-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
               <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Student login page</h3>
+                <h3 class="font-semibold text-gray-900 dark:text-white">Admin login page</h3>
               </div>
               <div class="px-3 py-2">
-                <p>Click this link and you'll be directed to the student login page.</p>
+                <p>Click this link and you'll be directed to the admin login page.</p>
               </div>
               <div data-popper-arrow></div>
             </div>
@@ -106,7 +148,7 @@
         </div>
       </div>
     </div>
-
+  </div>
   <script>
     // For password visibility
     function togglePasswordVisibility() {
