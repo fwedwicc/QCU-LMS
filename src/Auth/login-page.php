@@ -65,7 +65,7 @@
         <h1 class="font-bold text-gray-900 dark:text-white text-4xl mb-8">Welcome, QCians!</h1>
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <!-- Form -->
-          <form class="space-y-4" action="#">
+          <form class="space-y-3" action="#">
             <h5 class="text-xl font-medium text-gray-900 dark:text-white mb-7">Sign in to your account</h5>
             <!-- Username Input -->
             <label for="user" class="block text-sm font-medium text-gray-900 dark:text-white">Username</label>
@@ -78,7 +78,7 @@
               <input type="text" id="user" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your username">
             </div>
             <!-- Password Input -->
-            <label for="password" class="block text-sm font-medium text-gray-900 dark:text-white">Password</label>
+            <label for="password" class="block text-sm font-medium text-gray-900 dark:text-white pt-4">Password</label>
             <div class="flex">
               <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
                 <svg class="w-6 h-6 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -87,40 +87,29 @@
               </span>
               <input type="password" id="password" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your password">
             </div>
-            <!-- Show Password -->
-            <div class="flex items-start">
+            <!-- Show and Forgot Password container -->
+            <div class="flex justify-between pb-4">
               <div class="flex items-start">
                 <div class="flex items-center h-5">
                   <input id="remember" type="checkbox" onclick="togglePasswordVisibility()" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 cursor-pointer" required>
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Show Password</label>
               </div>
+              <a href="#" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500 text-sm font-medium">Forgot Password?</a>
               <!-- Optional kemeruts -->
               <!-- <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
             </div>
+            <!-- Error Message for validation -->
+            <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
             <!-- Login Button -->
             <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
-            <!-- Login link kemeruts -->
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-              Are you <a href="../instructor/instructor-login.php" data-popover-target="instructor-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Instructor</a> or <a href="../admin/admin-login.php" data-popover-target="admin-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500">Admin</a>?
-            </div>
             <!-- Popver for admin login link -->
-            <div data-popover id="admin-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
               <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Admin login page</h3>
+                <h3 class="font-semibold text-gray-900 dark:text-white">Forgot Password Page</h3>
               </div>
               <div class="px-3 py-2">
-                <p>Click this link and you'll be directed to the admin login page.</p>
-              </div>
-              <div data-popper-arrow></div>
-            </div>
-            <!-- Popver for instructor login link -->
-            <div data-popover id="instructor-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Instructor login page</h3>
-              </div>
-              <div class="px-3 py-2">
-                <p>Click this link and you'll be directed to the instructor login page.</p>
+                <p>Click this link and you'll be directed to the forgot password page.</p>
               </div>
               <div data-popper-arrow></div>
             </div>
