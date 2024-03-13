@@ -95,7 +95,7 @@
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Show Password</label>
               </div>
-              <a href="#" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500 text-sm font-medium">Forgot Password?</a>
+              <a href="./forgot-password.php" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-blue-700 hover:underline dark:text-blue-500 text-sm font-medium">Forgot Password?</a>
               <!-- Optional kemeruts -->
               <!-- <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
             </div>
