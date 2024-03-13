@@ -66,7 +66,7 @@
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <!-- Form -->
           <form class="space-y-3" action="#">
-            <h5 class="text-xl font-medium text-gray-900 dark:text-white mb-7">Sign in to your account</h5>
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white mb-7">Sign In to your account</h5>
             <!-- Username Input -->
             <label for="user" class="block text-sm font-medium text-gray-900 dark:text-white">Username</label>
             <div class="flex">
