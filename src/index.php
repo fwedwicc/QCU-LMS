@@ -9,5 +9,8 @@
 <body>
   <h1 class="bg-red-500">Login form</h1>
   <button class="btn-primary">Button</button>
+  <input type="checkbox" name="" id="" class="checkbox">
+  <!-- Flowbite Script -->
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

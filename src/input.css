@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* Primary Button */
   .btn-primary {
     @apply bg-neon-blue text-white text-sm rounded-md font-medium px-5 py-2.5 text-center transition ease-in-out 
     duration-300 placeholder-moody-blue;
@@ -11,6 +12,14 @@
     }
     &:focus {
       @apply ring-perano ring-4 outline-none;
+    }
+  }
+  /* Checkbox */
+  .checkbox {
+    @apply w-4 h-4 border border-lavender rounded bg-ghost-white text-neon-blue cursor-pointer transition ease-in-out 
+    duration-300;
+    &:focus {
+      @apply ring-neon-blue outline-none ring-4;
     }
   }
 }
