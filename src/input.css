@@ -19,7 +19,7 @@
     @apply w-4 h-4 border border-lavender rounded bg-ghost-white text-neon-blue cursor-pointer transition ease-in-out 
     duration-300;
     &:focus {
-      @apply ring-neon-blue outline-none ring-4;
+      @apply ring-neon-blue outline-none ring-3;
     }
   }
 }
