@@ -16,36 +16,50 @@
 <body>
   <div class="h-screen grid md:grid-cols-2">
     <!-- Left side -->
-    <!-- bg-gradient-to-t from-violet-50 to-violet-300 , alternative incase magkaproblem sa screen size  -->
     <div class="col-span-1 hidden md:block">
-      <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+      <div id="default-carousel" class="relative object-cover w-full h-full" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden">
-          <!-- Comment this out for a gradient color background instead of this image -->
-          <img src="./assets/images/illustration-background.png" class="object-cover w-full h-full block absolute" alt="Illustration Background">
-          <!-- Illustration 1 -->
-          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="./assets/images/learn-illustration.png" class="absolute block pr-[8rem] w-[33rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <!-- Picture 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
           </div>
-          <!-- Illustration 2 -->
-          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="./assets/images/educate-illustration.png" class="absolute block pr-[10rem] w-[46rem] pb-24 flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <!-- Picture 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
-          <!-- Illustration 3 -->
-          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="./assets/images/organize-illustration.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <!-- Picture 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
           </div>
-          <!-- Illustration 4 -->
-          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="./assets/images/empower-illustration.png" class="absolute block pr-[10rem] w-[38rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <!-- Picture 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
+          <!-- Picture 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+          <!-- Picture 6 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../assets/image/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          <button type="button" class="w-2.5 h-2.5 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5"></button>
         </div>
       </div>
     </div>
     <!-- Right side -->
     <div class="col-span-1 p-12">
       <span class="inline-flex items-center">
-        <img src="../assets/image/QCU-logo.png" alt="QCU Logo" class="h-9 w-auto mr-6">
+        <img src="../assets/image/QCU-logo.png" alt="QCU Logo" class="h-9 w-auto mr-5">
         <h3 class="font-bold text-xl">QCU-LMS</h3>
       </span>
       <!-- Greeting -->
@@ -116,7 +130,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const yearSpan = document.getElementById('year');
       const currentYear = new Date().getFullYear();
-      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline text-neon-blue" target="_blank">QCU-LMS</a>.`;
+      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline text-neon-blue" target="_blank">Quezon City University</a>.`;
     });
   </script>
   <!-- Flowbite Script -->
