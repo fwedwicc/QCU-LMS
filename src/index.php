@@ -22,19 +22,19 @@
         <div class="relative h-full overflow-hidden">
           <!-- Picture 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image1.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="../assets/image/QCU-image1.png" class="carousel-image" alt="QCU Photograph by CSS">
           </div>
           <!-- Picture 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image2.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="../assets/image/QCU-image2.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
           <!-- Picture 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image3.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="../assets/image/QCU-image3.png" class="carousel-image" alt="QCU Photograph by CSS">
           </div>
           <!-- Picture 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image4.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="../assets/image/QCU-image4.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
         </div>
         <!-- Slider indicators -->
@@ -62,7 +62,7 @@
             <!-- Username Input -->
             <label for="user" class="block text-sm font-medium">Username</label>
             <div class="flex">
-              <span class="inline-flex items-center px-3 text-sm text-witty-blue bg-ghost-lavender border rounded-e-0 border-lavender rounded-s-md">
+              <span class="input-icon">
                 <svg class="w-6 h-6 text-witty-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                   <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
                 </svg>
@@ -72,7 +72,7 @@
             <!-- Password Input -->
             <label for="password" class="block text-sm font-medium pt-3">Password</label>
             <div class="flex">
-              <span class="inline-flex items-center px-3 text-sm text-witty-blue bg-ghost-lavender border rounded-e-0 border-lavender rounded-s-md">
+              <span class="input-icon">
                 <svg class="w-6 h-6 text-witty-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                   <path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7c0-1.1.9-2 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6c.6 0 1 .4 1 1v3a1 1 0 1 1-2 0v-3c0-.6.4-1 1-1Z" clip-rule="evenodd" />
                 </svg>
@@ -87,15 +87,15 @@
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium">Show Password</label>
               </div>
-              <a href="#" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-neon-blue hover:underline text-sm font-medium">Forgot Password?</a>
+              <a href="./auth/forgot-password.php" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-neon-blue hover:underline text-sm font-medium">Forgot Password?</a>
             </div>
             <!-- Error Message for validation -->
             <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
             <!-- Login Button -->
             <button type="submit" class="btn-primary w-full">Login</button>
             <!-- Popver for admin login link -->
-            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
-              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
+            <div data-popover id="forgot-pass-popover" role="tooltip" class="popover-container">
+              <div class="popover-header">
                 <h3 class="font-semibold">Forgot Password Page</h3>
               </div>
               <div class="px-3 py-2">

@@ -9,7 +9,7 @@
   h1, h2, h4 {
     @apply text-corn-flower-blue;
   }
-  p, h3,h5, label {
+  p, h3, h5, label {
     @apply text-deep-koamaru;
   }
 }
@@ -37,6 +37,13 @@
       @apply ring-deep-lav-blue ring-4 outline-none;
     }
   }
+  /* Input Field */
+  .input-field {
+    @apply bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md block p-2.5 
+    placeholder-moody-blue transition ease-in-out duration-300;
+  } &:focus {
+    @apply ring-neon-blue border-neon-blue;
+  }
   /* Checkbox */
   .checkbox {
     @apply w-4 h-4 border border-lavender rounded bg-ghost-white text-neon-blue cursor-pointer transition ease-in-out 
@@ -52,6 +59,23 @@
     &:focus {
       @apply ring-neon-blue outline-none;
     }
+  }
+  /* Login Input Icon */
+  .input-icon {
+    @apply inline-flex items-center px-3 text-sm text-witty-blue bg-ghost-lavender border border-lavender 
+    rounded-s-md;
+  }
+  /* Carousel Image */
+  .carousel-image {
+    @apply absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2;
+  }
+  /* Popover */
+  .popover-container {
+    @apply absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 
+    bg-white border border-quartz rounded-lg shadow-sm opacity-0;
+  }
+  .popover-header {
+    @apply px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg;
   }
 }
 
