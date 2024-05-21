@@ -35,7 +35,7 @@
             <!-- Cancel -->
             <a href="../index.php" type="button" class="btn-secondary w-full">Cancel</a>
             <!-- Continue -->
-            <button type="submit" class="btn-primary w-full">Continue</button>
+            <a href="./otp-verification.php" type="submit" class="btn-primary w-full">Continue</a>
           </div>
         </form>
       </div>

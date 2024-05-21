@@ -24,7 +24,7 @@
         <!-- Form -->
         <form class="space-y-3" action="#">
           <h5 class="text-xl font-medium mb-3">Verification</h5>
-          <p class="block text-sm font-normal pb-5">We have sent OTP to your e-mail, type kemerychu.
+          <p class="block text-sm font-normal pb-5">We have sent an OTP to your email. Please enter the OTP below to proceed.
           </p>
           <!-- OTP Input -->
           <div class="flex pb-6 space-x-2 rtl:space-x-reverse">
@@ -56,7 +56,7 @@
           <!-- Error Message for validation -->
           <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
           <!-- Submit Button -->
-          <button type="submit" class="btn-primary w-full">Submit</button>
+          <a href="./change-password.php" type="submit" class="btn-primary w-full">Submit</a>
           <!-- Resent OTP link -->
           <span class="block text-sm text-center font-medium text-deep-koamaru pt-1">Didn't receive OTP? <a href="" class="text-neon-blue hover:underline text-sm font-medium">Resend OTP</a></span>
         </form>

@@ -35,7 +35,7 @@
           <!-- Error Message for validation -->
           <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
           <!-- Submit Button -->
-          <button type="submit" class="w-full btn-primary">Submit</button>
+          <a href="../index.php" type="submit" class="w-full btn-primary">Submit</a>
         </form>
       </div>
     </div>
