@@ -27,7 +27,7 @@
           <p class="block text-sm font-normal pb-5">Please enter your email address to receive an OTP
           </p>
           <!-- Email Address Input -->
-          <input type="text" id="first-name" class="input-field w-full" placeholder="juan.delacruz@gmail.com" required>
+          <input type="email" id="first-name" class="input-field w-full" placeholder="juan.delacruz@gmail.com" required>
           <!-- Error Message for validation -->
           <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
           <!-- Action Buttons -->
