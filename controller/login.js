@@ -4,31 +4,39 @@ document.getElementById('login-form').addEventListener('submit', function (event
   const username = document.getElementById('user').value;
   const password = document.getElementById('pass').value;
 
-  // Get the error message element
   const errorMessage = document.getElementById('error-alert');
 
-  // Hide the error message initially
   errorMessage.classList.add('hidden');
+  errorMessage.classList.remove('opacity-100');
+  errorMessage.classList.add('opacity-0');
+
+  function clearFields() {
+    document.getElementById('user').value = '';
+    document.getElementById('pass').value = '';
+  }
 
   // Check the username and password and redirect accordingly
   if (username === 'student' && password === 'student123') {
     window.location.href = '../student/student-home.php';
+    clearFields();
   } else if (username === 'instructor' && password === 'instructor123') {
     window.location.href = '../instructor/instructor-home.php';
+    clearFields();
   } else if (username === 'admin' && password === 'admin123') {
     window.location.href = '../admin/admin-home.php';
+    clearFields();
   } else {
-    // Show the error message
+    clearFields();
     errorMessage.classList.remove('hidden');
+    errorMessage.classList.remove('opacity-0');
     errorMessage.classList.add('opacity-100');
 
-    // Hide the error message after 5 seconds
     setTimeout(() => {
       errorMessage.classList.add('opacity-0');
       setTimeout(() => {
         errorMessage.classList.add('hidden');
         errorMessage.classList.remove('opacity-0');
-      }, 500); // Match this to the transition duration
+      }, 500);
     }, 5000);
   }
 });
