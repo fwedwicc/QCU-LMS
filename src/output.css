@@ -1608,6 +1608,11 @@ p, h3, h5, label {
   display: none;
 }
 
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -1752,12 +1757,8 @@ p, h3, h5, label {
   width: 100%;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
-.w-24 {
-  width: 6rem;
+.w-9 {
+  width: 2.25rem;
 }
 
 .max-w-md {
@@ -1891,6 +1892,10 @@ p, h3, h5, label {
   gap: 1rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1909,6 +1914,12 @@ p, h3, h5, label {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1919,12 +1930,6 @@ p, h3, h5, label {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1983,6 +1988,10 @@ p, h3, h5, label {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-b-2xl {
@@ -2265,10 +2274,6 @@ p, h3, h5, label {
   padding-bottom: 1.5rem;
 }
 
-.pl-11 {
-  padding-left: 2.75rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2301,6 +2306,42 @@ p, h3, h5, label {
   padding-top: 2rem;
 }
 
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-\[rem\] {
+  padding-top: rem;
+}
+
+.pt-\[8rem\] {
+  padding-top: 8rem;
+}
+
+.pt-\[12rem\] {
+  padding-top: 12rem;
+}
+
+.pt-\[8remrem\] {
+  padding-top: 8remrem;
+}
+
+.pt-\[2rem\] {
+  padding-top: 2rem;
+}
+
+.pt-\[3rem\] {
+  padding-top: 3rem;
+}
+
+.pt-\[5rem\] {
+  padding-top: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2317,11 +2358,6 @@ p, h3, h5, label {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2344,6 +2380,11 @@ p, h3, h5, label {
   line-height: 1rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2358,6 +2399,10 @@ p, h3, h5, label {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .leading-6 {
@@ -2485,6 +2530,12 @@ p, h3, h5, label {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2493,12 +2544,6 @@ p, h3, h5, label {
 
 .transition-transform {
   transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-all {
-  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
