@@ -37,6 +37,10 @@
       @apply ring-deep-lav-blue ring-4 outline-none;
     }
   }
+  /* Navbar */
+  .navbar {
+    @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue;
+  }
   /* Sidebar */
   .sidebar {
     @apply fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-all duration-300 -translate-x-full bg-lav-sant border-r 
@@ -45,7 +49,17 @@
   .sidebar-container {
     @apply h-full px-5 pb-5 overflow-y-auto bg-lav-sant flex flex-col justify-between;
   }
-  /* Sidebar Button */
+  /* Sidebar Toggle Button */
+  .toggle-sidebar {
+    @apply inline-flex items-center p-2 text-sm text-corn-flower-blue rounded-lg sm:hidden;
+    &:hover {
+      @apply bg-ghost-lavender;
+    }
+    &:focus {
+      @apply bg-ghost-lavender text-neon-blue ;
+    }
+  }
+  /* Navigation Button */
   .nav-btn {
     @apply flex items-center p-3 text-corn-flower-blue rounded-lg transition duration-300 
     ease-in-out;
@@ -56,6 +70,17 @@
   /* Sidebar Button Icons */
   .nav-btn-icon {
     @apply flex-shrink-0 w-5 h-5 text-corn-flower-blue transition duration-75;
+  }
+  /* Notification Bell Button */
+  .notif-bell {
+    @apply relative inline-flex items-center text-sm font-medium text-center text-deep-koamaru transition duration-300 
+    ease-in-out mr-2 p-1 rounded-full;
+    &:hover {
+      @apply text-neon-blue bg-ghost-lavender;
+    }
+    &:focus {
+      @apply outline-none text-neon-blue bg-ghost-lavender;
+    }
   }
 
   /* Sidebar Button Indicator */
