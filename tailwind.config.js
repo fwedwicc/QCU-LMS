@@ -9,10 +9,12 @@ module.exports = {
     extend: {
       colors: {
         "ghost-white": "#F4F4FF", // Background & Input Color
+        "dark-ghost": "#111827",
         "corn-flower-blue": "#4E4C76", // Heading
         "deep-koamaru": "#36355C", // Paragraph
         quartz: "#D8D5FF", // Popover Border
         "lav-sant": "#EDEDFF", // Nav and Side Bar
+        "dark-lav-sant": "#192231",
         // Input
         lavender: "#DFDFF9", // Input Outline
         "moody-blue": "#8383B8", // Placeholder
@@ -24,6 +26,7 @@ module.exports = {
         // Secondary Button
         "ghost-lavender": "#E4E2FF", // Ghost Button & Accordion Header
         "lavender-blue": "#D2CFFF", // Ghost Button Hover & Accordion Header Outline & Nav and Side Bar Border
+        "dark-lavender-blue": "#212E43",
         "deep-lav-blue": "#C4BFFD", // Ghost Button Clicked Ring
         // Task Button
         "off-green": "#E1EEE3", // Task Button

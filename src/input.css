@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-ghost-white;
+    @apply bg-ghost-white dark:bg-dark-ghost;
   }
   h1, h2, h4 {
     @apply text-corn-flower-blue;
@@ -39,15 +39,16 @@
   }
   /* Navbar */
   .navbar {
-    @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue;
+    @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue dark:bg-dark-lav-sant 
+    dark:border-dark-lavender-blue;
   }
   /* Sidebar */
   .sidebar {
     @apply fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-all duration-300 -translate-x-full bg-lav-sant border-r 
-    border-lavender-blue sm:translate-x-0;
+    border-lavender-blue sm:translate-x-0 dark:bg-dark-lav-sant dark:border-dark-lavender-blue;
   }
   .sidebar-container {
-    @apply h-full px-5 pb-5 overflow-y-auto bg-lav-sant flex flex-col justify-between;
+    @apply h-full px-5 pb-5 overflow-y-auto bg-lav-sant flex flex-col justify-between dark:bg-dark-lav-sant;
   }
   /* Sidebar Toggle Button */
   .toggle-sidebar {
