@@ -130,8 +130,8 @@
               <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-2xl drop-shadows w-56">
                 <div class="px-4 py-3 text-sm text-deep-koamaru flex flex-col justify-center items-center">
                   <img class="w-14 h-auto rounded-full mb-3" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
-                  <div class="font-medium"><?php echo $_SESSION['fullname']; ?></div>
-                  <div class="truncate"><?php echo $_SESSION['email']; ?></div>
+                  <div class="font-medium">Juan Dela Cruz</div>
+                  <div class="truncate">juan.dc.12@gmail.com</div>
                 </div>
                 <ul class="py-2 text-sm font-medium text-deep-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
                   <li>
@@ -172,8 +172,8 @@
       <ul class="space-y-1 font-medium text-base">
         <li>
           <!-- Dashboard -->
-          <a href="./student-dashboard.php" class="nav-btn group">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav-btn-icon group-hover:text-neon-blue">
+          <a href="./student-dashboard.php" id="dashboard-btn" class="nav-btn group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav-btn-icon group-hover:text-neon-blue" id="dashboard-icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
             </svg>
             <span class="ms-3">Dashboard</span>
@@ -181,7 +181,7 @@
         </li>
         <li>
           <!-- Courses -->
-          <a href="" class="nav-btn group">
+          <a href="./test-page.php" id="course-btn" class="nav-btn group">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav-btn-icon group-hover:text-neon-blue">
               <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9" />
             </svg>
@@ -224,8 +224,10 @@
       </ul>
     </div>
   </aside>
+  <!-- // Left Sidebar -->
 
-  <script src="./side-bar.js"></script>
+  <!-- Sidebar Script -->
+  <script src="./sidebar.js"></script>
   <!-- Flowbite Script -->
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
