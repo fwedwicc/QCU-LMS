@@ -5,8 +5,8 @@ window.onload = function () {
     const dashboardBtn = document.getElementById('dashboard-btn');
     const dashboardIcon = document.getElementById('dashboard-icon');
     
-    dashboardBtn.classList.add('bg-ghost-lavender', 'text-neon-blue');
-    dashboardIcon.classList.add('text-neon-blue');
+    dashboardBtn.classList.add('bg-ghost-lavender', 'dark:bg-dark-ghost-lavender', 'text-neon-blue', 'dark:text-dark-neon-blue');
+    dashboardIcon.classList.add('text-neon-blue', 'dark:text-dark-neon-blue');
   }
 
   // if (filename == 'test-page.php') {

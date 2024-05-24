@@ -18,7 +18,7 @@ include_once './side-nav-bar.php';
 ?>
 
 <body>
-  <h1 class="text-2xl font-semibold pt-20">Student Dashboard</h1>
+  <h1 class="text-2xl font-semibold pt-24 pl-64">Student Dashboard</h1>
   <!-- Flowbite Script -->
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

@@ -7,10 +7,10 @@
     @apply bg-ghost-white dark:bg-dark-ghost;
   }
   h1, h2, h4 {
-    @apply text-corn-flower-blue;
+    @apply text-corn-flower-blue dark:text-dark-corn-koamaru;
   }
   p, h3, h5, label {
-    @apply text-deep-koamaru;
+    @apply text-deep-koamaru dark:text-dark-corn-koamaru;
   }
 }
 
@@ -44,7 +44,7 @@
   }
   /* Sidebar */
   .sidebar {
-    @apply fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-all duration-300 -translate-x-full bg-lav-sant border-r 
+    @apply fixed top-0 left-0 z-40 w-64 h-screen pt-[5.5rem] transition-all duration-300 -translate-x-full bg-lav-sant border-r 
     border-lavender-blue sm:translate-x-0 dark:bg-dark-lav-sant dark:border-dark-lavender-blue;
   }
   .sidebar-container {
@@ -62,31 +62,32 @@
   }
   /* Navigation Button */
   .nav-btn {
-    @apply flex items-center p-3 text-corn-flower-blue rounded-lg transition duration-300 
+    @apply flex items-center p-3 text-corn-flower-blue dark:text-dark-corn-koamaru rounded-lg transition duration-300 
     ease-in-out;
     &:hover {
-      @apply text-neon-blue bg-ghost-lavender;
+      @apply text-neon-blue bg-ghost-lavender dark:bg-dark-ghost-lavender dark:text-dark-neon-blue;
     }
   }
   /* Sidebar Button Icons */
   .nav-btn-icon {
-    @apply flex-shrink-0 w-5 h-5 text-corn-flower-blue transition duration-75;
+    @apply flex-shrink-0 w-5 h-5 text-corn-flower-blue dark:text-dark-corn-koamaru transition duration-75;
   }
   /* Notification Bell Button */
   .notif-bell {
-    @apply relative inline-flex items-center text-sm font-medium text-center text-deep-koamaru transition duration-300 
-    ease-in-out mr-2 p-1 rounded-full;
+    @apply relative inline-flex items-center text-sm font-medium text-center text-deep-koamaru dark:text-dark-corn-koamaru 
+    transition duration-300 ease-in-out mr-2 p-1 rounded-full;
     &:hover {
-      @apply text-neon-blue bg-ghost-lavender;
+      @apply text-neon-blue dark:text-dark-neon-blue bg-ghost-lavender dark:bg-dark-ghost-lavender;
     }
     &:focus {
-      @apply outline-none text-neon-blue bg-ghost-lavender;
+      @apply outline-none text-neon-blue dark:text-dark-neon-blue bg-ghost-lavender dark:bg-dark-ghost-lavender;
     }
   }
 
   /* Sidebar Button Indicator */
   .btn-indicator {
-    @apply inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-neon-blue bg-ghost-lavender rounded-full;
+    @apply inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-neon-blue dark:text-dark-neon-blue
+    bg-ghost-lavender dark:bg-dark-ghost-lavender rounded-full;
   }
   /* Input Field */
   .input-field {
