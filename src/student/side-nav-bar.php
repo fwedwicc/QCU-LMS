@@ -60,7 +60,7 @@
             <div class="absolute block w-3 h-3 bg-red-500 border-2 border-lav-sant rounded-full -top-0.5 start-2.1">
             </div>
           </button>
-          <!-- Dropdown menu ng notif bell-->
+          <!-- Notification Menu-->
           <div id="dropdownNotification" class="z-20 hidden w-full max-w-sm bg-white divide-y divide-indigo-100 rounded-2xl drop-shadows" aria-labelledby="dropdownNotificationButton">
             <div class="block px-4 py-2 font-medium text-center text-deep-koamaru rounded-t-2xl bg-white">
               Notifications
@@ -136,16 +136,18 @@
               </div>
             </a>
           </div>
+          <!-- // Notification Menu-->
           <div class="flex items-center ms-3">
             <div>
-              <!-- Profile sa taas -->
+              <!-- User Dropdown Button -->
               <button id="dropdownUserAvatarButton" data-modal-backddrop="static" data-dropdown-toggle="dropdownAvatar" class="notif-bell" type="button">
                 <span class="sr-only">Open user menu</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
               </button>
-              <!-- Dropdown menu -->
+              <!-- // User Dropdown Button -->
+              <!-- User Dropdown menu -->
               <div id="dropdownAvatar" class="user-menu">
                 <div class="px-4 py-6 text-sm text-deep-koamaru dark:text-dark-corn-koamaru flex flex-col justify-center items-center">
                   <div class="avatar-container mb-3 w-14 h-14">
@@ -163,6 +165,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- // User Dropdown menu -->
               <!-- Sign Out Modal -->
               <div id="sign-out-modal" tabindex="-1" data-modal-backdrop="static" class="confirmation-modal">
                 <div class="relative p-4 w-full max-w-md max-h-full">
@@ -220,6 +223,7 @@
           </a>
         </li>
       </ul>
+      <!-- // Top Side -->
       <!-- Bottom Side -->
       <ul class="space-y-1 font-medium border-lavender-blue dark:border-dark-lavender-blue border-t pt-4">
         <li>
@@ -263,6 +267,7 @@
           </div>
         </li>
       </ul>
+      <!-- // Bottom Side -->
     </div>
   </aside>
   <!-- // Left Sidebar -->

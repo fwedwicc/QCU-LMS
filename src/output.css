@@ -1081,6 +1081,8 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   }
 }
 
+/* -------------------- Buttons -------------------- */
+
 /* Primary Button */
 
 .btn-primary {
@@ -1281,6 +1283,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   }
 }
 
+/* -------------------- // Buttons -------------------- */
+
+/* -------------------- Navbar -------------------- */
+
 /* Navbar */
 
 .navbar {
@@ -1367,6 +1373,95 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
     color: rgb(99 102 241 / var(--tw-text-opacity));
   }
 }
+
+/* Profile/Avatar Container */
+
+.avatar-container {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 117 245 / var(--tw-bg-opacity));
+}
+
+.avatar-container:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+/* Notification Bell Button */
+
+.notif-bell {
+  position: relative;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(54 53 92 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notif-bell:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(214 214 247 / var(--tw-text-opacity));
+}
+
+.notif-bell {
+  &:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(228 226 255 / var(--tw-bg-opacity));
+  }
+  &:hover {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+  }
+  &:hover:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  }
+  &:hover:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(99 102 241 / var(--tw-text-opacity));
+  }
+  &:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgb(228 226 255 / var(--tw-bg-opacity));
+  }
+  &:focus {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+  }
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  &:focus:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  }
+  &:focus:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(99 102 241 / var(--tw-text-opacity));
+  }
+}
+
+/* -------------------- // Navbar -------------------- */
+
+/* -------------------- Sidebar -------------------- */
 
 /* Sidebar */
 
@@ -1478,26 +1573,7 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-/* Profile/Avatar Container */
-
-.avatar-container {
-  display: flex;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(104 117 245 / var(--tw-bg-opacity));
-}
-
-.avatar-container:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
-/* Navigation Button */
+/* Sidebar Buttons */
 
 .nav-btn {
   display: flex;
@@ -1557,72 +1633,6 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   color: rgb(214 214 247 / var(--tw-text-opacity));
 }
 
-/* Notification Bell Button */
-
-.notif-bell {
-  position: relative;
-  margin-right: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 9999px;
-  padding: 0.25rem;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgb(54 53 92 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.notif-bell:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(214 214 247 / var(--tw-text-opacity));
-}
-
-.notif-bell {
-  &:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(228 226 255 / var(--tw-bg-opacity));
-  }
-  &:hover {
-    --tw-text-opacity: 1;
-    color: rgb(79 70 229 / var(--tw-text-opacity));
-  }
-  &:hover:is(.dark *) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  }
-  &:hover:is(.dark *) {
-    --tw-text-opacity: 1;
-    color: rgb(99 102 241 / var(--tw-text-opacity));
-  }
-  &:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgb(228 226 255 / var(--tw-bg-opacity));
-  }
-  &:focus {
-    --tw-text-opacity: 1;
-    color: rgb(79 70 229 / var(--tw-text-opacity));
-  }
-  &:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  &:focus:is(.dark *) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  }
-  &:focus:is(.dark *) {
-    --tw-text-opacity: 1;
-    color: rgb(99 102 241 / var(--tw-text-opacity));
-  }
-}
-
 /* Sidebar Button Indicator */
 
 .btn-indicator {
@@ -1649,6 +1659,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
+
+/* -------------------- // Sidebar -------------------- */
+
+/* -------------------- Forms -------------------- */
 
 /* Input Field */
 
@@ -1725,6 +1739,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
     --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
   }
 }
+
+/* -------------------- // Forms -------------------- */
+
+/* -------------------- Login Page Components -------------------- */
 
 /* Login Input */
 
@@ -1809,6 +1827,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+/* -------------------- // Login Page Components -------------------- */
+
+/* -------------------- Other Components -------------------- */
 
 /* Popover */
 
@@ -2723,6 +2745,11 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8 {
