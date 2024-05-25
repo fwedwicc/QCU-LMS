@@ -37,6 +37,28 @@
       @apply ring-deep-lav-blue ring-4 outline-none;
     }
   }
+  /* Danger Button */
+  .btn-danger {
+    @apply text-white bg-red-600 dark:bg-red-500 font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 
+    text-center transition duration-300 ease-in-out;
+    &:hover {
+      @apply bg-red-700 dark:bg-red-600;
+    }
+    &:focus {
+      @apply ring-4 outline-none ring-red-300 dark:ring-red-400 dark:bg-red-600;
+    }
+  }
+  /* Ghost Button */
+  .btn-ghost {
+    @apply text-deep-koamaru dark:text-dark-corn-koamaru bg-transparent border border-purple-blue dark:border-slate-700 font-medium 
+    rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out;
+    &:hover {
+      @apply bg-ghost-lavender dark:bg-[#263347];
+    }
+    &:focus {
+      @apply ring-4 outline-none ring-perano;
+    }
+  }
   /* Navbar */
   .navbar {
     @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue dark:bg-dark-lav-sant 
@@ -152,7 +174,8 @@
   /* Modal Container */
   .confirmation-modal {
     @apply hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full 
-    md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender dark:bg-dark-ghost-lavender bg-opacity-50;
+    md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender dark:bg-slate-900 
+    dark:bg-opacity-50 bg-opacity-50;
   }
 }
 

@@ -147,7 +147,7 @@
               </button>
               <!-- Dropdown menu -->
               <div id="dropdownAvatar" class="user-menu">
-                <div class="px-4 py-3 text-sm text-deep-koamaru dark:text-dark-corn-koamaru flex flex-col justify-center items-center">
+                <div class="px-4 py-6 text-sm text-deep-koamaru dark:text-dark-corn-koamaru flex flex-col justify-center items-center">
                   <div class="avatar-container mb-3 w-14 h-14">
                     <span class="font-medium text-white text-xl">JD</span>
                   </div>
@@ -168,14 +168,14 @@
                 <div class="relative p-4 w-full max-w-md max-h-full">
                   <div class="relative bg-white dark:bg-primary-dark rounded-2xl py-8">
                     <div class="p-4 md:p-5 text-center space-x-4">
-                      <svg class="mx-auto mb-4 text-corn-flower-blue w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <svg class="mx-auto mb-4 text-corn-flower-blue dark:text-dark-corn-koamaru w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
-                      <h3 class="mb-12 text-lg font-normal">Are you sure you want to Logout?</h3>
-                      <a href="../index.php" data-modal-hide="sign-out-modal" type="button" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
+                      <h3 class="mb-12 text-lg font-normal">Are you sure you want to logout?</h3>
+                      <a href="../index.php" data-modal-hide="sign-out-modal" type="button" class="btn-danger">
                         Yes
                       </a>
-                      <button data-modal-hide="sign-out-modal" type="button" class="text-deep-koamaru bg-transparent border border-purple-blue hover:bg-ghost-lavender focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">No</button>
+                      <button data-modal-hide="sign-out-modal" type="button" class="btn-ghost">No</button>
                     </div>
                   </div>
                 </div>
