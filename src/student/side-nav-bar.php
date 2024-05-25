@@ -7,8 +7,6 @@
   <title>QCU-LMS</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="../../assets/image/QCU-logo.png" type="image/x-icon">
-  <!-- Flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="../output.css">
   <script>
@@ -175,7 +173,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
                       <h3 class="mb-12 text-lg font-normal">Are you sure you want to logout?</h3>
-                      <a href="../index.php" data-modal-hide="sign-out-modal" type="button" class="btn-danger">
+                      <a href="../../index.php" data-modal-hide="sign-out-modal" type="button" class="btn-danger">
                         Yes
                       </a>
                       <button data-modal-hide="sign-out-modal" type="button" class="btn-ghost">No</button>
@@ -277,8 +275,7 @@
   <!-- Sidebar Script -->
   <script src="./sidebar.js"></script>
   <!-- Flowbite Script -->
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>

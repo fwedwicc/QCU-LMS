@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QCU-LMS</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="../assets/image/QCU-logo.png" type="image/x-icon">
-  <!-- Flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/image/QCU-logo.png" type="image/x-icon">
   <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body>
@@ -40,19 +38,19 @@
         <div class="relative h-full overflow-hidden">
           <!-- Picture 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image1.png" class="carousel-image" alt="QCU Photograph by CSS">
+            <img src="./assets/image/QCU-image1.png" class="carousel-image" alt="QCU Photograph by CSS">
           </div>
           <!-- Picture 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image2.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="./assets/image/QCU-image2.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
           <!-- Picture 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image3.png" class="carousel-image" alt="QCU Photograph by CSS">
+            <img src="./assets/image/QCU-image3.png" class="carousel-image" alt="QCU Photograph by CSS">
           </div>
           <!-- Picture 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../assets/image/QCU-image4.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="./assets/image/QCU-image4.png" class="carousel-image" alt="QCU Photograph by Joanah Marie Aldave">
           </div>
         </div>
         <!-- Slider indicators -->
@@ -67,7 +65,7 @@
     <!-- Right side -->
     <div class="col-span-1 p-12">
       <span class="inline-flex items-center">
-        <img src="../assets/image/QCU-logo.png" alt="QCU Logo" class="h-9 w-auto mr-5">
+        <img src="./assets/image/QCU-logo.png" alt="QCU Logo" class="h-9 w-auto mr-5">
         <h3 class="font-bold text-xl">QCU-LMS</h3>
       </span>
       <!-- Greeting -->
@@ -105,7 +103,7 @@
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium">Show Password</label>
               </div>
-              <a href="./auth/forgot-password.php" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-neon-blue hover:underline text-sm font-medium">Forgot Password?</a>
+              <a href="./src/auth/forgot-password.php" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-neon-blue hover:underline text-sm font-medium">Forgot Password?</a>
             </div>
             <!-- Error Message for validation -->
             <!-- <p id="error-message" class="text-sm text-red-600 dark:text-red-500 hidden"><span class="font-medium">Username or password</span> are incorrect.</p> -->
@@ -138,14 +136,13 @@
     document.addEventListener('DOMContentLoaded', function() {
       const yearSpan = document.getElementById('year');
       const currentYear = new Date().getFullYear();
-      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline text-neon-blue" target="_blank">Quezon City University</a>.`;
+      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" class="hover:underline text-neon-blue" target="_blank">Quezon City University</a>.`;
     });
   </script>
   <!-- Login Controller -->
-  <script src="../controller/login.js"></script>
+  <script src="./controller/login.js"></script>
   <!-- Flowbite Script -->
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>

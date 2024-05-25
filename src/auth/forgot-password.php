@@ -7,8 +7,6 @@
   <title>QCU-LMS</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="../../assets/image/QCU-logo.png" type="image/x-icon">
-  <!-- Flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="../output.css">
 </head>
@@ -33,7 +31,7 @@
           <!-- Action Buttons -->
           <div class="flex gap-4 pt-8">
             <!-- Cancel -->
-            <a href="../index.php" type="button" class="btn-secondary w-full">Cancel</a>
+            <a href="../../index.php" type="button" class="btn-secondary w-full">Cancel</a>
             <!-- Continue -->
             <a href="./otp-verification.php" type="submit" class="btn-primary w-full">Continue</a>
           </div>
@@ -43,8 +41,7 @@
   </div>
 
   <!-- Flowbite Script -->
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>

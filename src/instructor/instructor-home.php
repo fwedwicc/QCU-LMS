@@ -7,5 +7,6 @@
 </head>
 <body>
   <h1>Instructor Dashboard</h1>
+  <script src="../../controller/login.js"></script>
 </body>
 </html>

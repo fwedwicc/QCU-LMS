@@ -7,8 +7,6 @@
   <title>QCU-LMS</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="../../assets/image/QCU-logo.png" type="image/x-icon">
-  <!-- Flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="../output.css">
 </head>
@@ -56,7 +54,7 @@
           <!-- Error Message for validation -->
           <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
           <!-- Submit Button -->
-          <a href="./change-password.php" type="submit" class="btn-primary w-full">Submit</a>
+          <a href="./change-password.php" type="submit" class="btn-primary block">Submit</a>
           <!-- Resent OTP link -->
           <span class="block text-sm text-center font-medium text-deep-koamaru pt-1">Didn't receive OTP? <a href="" class="text-neon-blue hover:underline text-sm font-medium">Resend OTP</a></span>
         </form>
@@ -67,8 +65,7 @@
   <!-- OTP Input Script -->
   <script src="./otp-verification.js"></script>
   <!-- Flowbite Script -->
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
