@@ -17,7 +17,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
 
   // Check the username and password and redirect accordingly
   if (username === 'student' && password === 'student123') {
-    window.location.href = '../api/student-dashboard';
+    window.location.href = '../src/student/student-dashboard.php';
     clearFields();
   } else if (username === 'instructor' && password === 'instructor123') {
     window.location.href = '../src/instructor/instructor-home.php';
