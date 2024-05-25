@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "primary-dark": "#1E293B", // Opposite for white in light mode
         "ghost-white": "#F4F4FF", // Background & Input Color
         "dark-ghost": "#111827",
         "corn-flower-blue": "#4E4C76", // Heading

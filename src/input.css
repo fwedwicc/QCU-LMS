@@ -42,6 +42,17 @@
     @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue dark:bg-dark-lav-sant 
     dark:border-dark-lavender-blue;
   }
+  /* User Menu */
+  .user-menu {
+    @apply z-10 hidden bg-white dark:bg-primary-dark divide-y divide-slate-100 dark:divide-slate-700 rounded-2xl drop-shadows dark:shadow-sm w-56;
+  }
+  /* User Menu Buttons */
+  .user-menu-btn {
+    @apply px-4 py-2 transition duration-300 ease-in-out;
+    &:hover {
+      @apply text-neon-blue bg-ghost-white dark:text-dark-neon-blue dark:bg-[#263347];
+    }
+  }
   /* Sidebar */
   .sidebar {
     @apply fixed top-0 left-0 z-40 w-64 h-screen pt-[5.5rem] transition-all duration-300 -translate-x-full bg-lav-sant border-r 
@@ -59,6 +70,15 @@
     &:focus {
       @apply bg-ghost-lavender text-neon-blue ;
     }
+  }
+  /* Information Card */
+  .info-card {
+    @apply border border-indigo-300 dark:border-slate-700 flex items-center p-4 gap-3 bg-ghost-lavender 
+    dark:bg-dark-ghost-lavender rounded-lg;
+  }
+  /* Profile/Avatar Container */
+  .avatar-container {
+    @apply flex items-center justify-center w-10 h-10 overflow-hidden bg-indigo-500 rounded-full dark:bg-dark-neon-blue;
   }
   /* Navigation Button */
   .nav-btn {
@@ -128,6 +148,11 @@
   }
   .popover-header {
     @apply px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg;
+  }
+  /* Modal Container */
+  .confirmation-modal {
+    @apply hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full 
+    md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender dark:bg-dark-ghost-lavender bg-opacity-50;
   }
 }
 

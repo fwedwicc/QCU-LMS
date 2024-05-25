@@ -146,31 +146,33 @@
                 </svg>
               </button>
               <!-- Dropdown menu -->
-              <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-2xl drop-shadows w-56">
-                <div class="px-4 py-3 text-sm text-deep-koamaru flex flex-col justify-center items-center">
-                  <img class="w-14 h-auto rounded-full mb-3" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+              <div id="dropdownAvatar" class="user-menu">
+                <div class="px-4 py-3 text-sm text-deep-koamaru dark:text-dark-corn-koamaru flex flex-col justify-center items-center">
+                  <div class="avatar-container mb-3 w-14 h-14">
+                    <span class="font-medium text-white text-xl">JD</span>
+                  </div>
                   <div class="font-medium">Juan Dela Cruz</div>
                   <div class="truncate">juan.dc.12@gmail.com</div>
                 </div>
-                <ul class="py-2 text-sm font-medium text-deep-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
+                <ul class="py-2 text-sm font-medium text-deep-koamaru dark:text-dark-corn-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
                   <li>
-                    <a href="./student-settings.php" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Settings</a>
+                    <a href="./student-settings.php" class="block user-menu-btn">Settings</a>
                   </li>
                   <li>
-                    <button data-modal-target="sign-out-modal" data-modal-toggle="sign-out-modal" type="button" class="w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Logout</button>
+                    <button data-modal-target="sign-out-modal" data-modal-toggle="sign-out-modal" type="button" class="w-full user-menu-btn">Logout</button>
                   </li>
                 </ul>
               </div>
               <!-- Sign Out Modal -->
-              <div id="sign-out-modal" tabindex="-1" data-modal-backdrop="static" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
+              <div id="sign-out-modal" tabindex="-1" data-modal-backdrop="static" class="confirmation-modal">
                 <div class="relative p-4 w-full max-w-md max-h-full">
-                  <div class="relative bg-white rounded-2xl py-8">
+                  <div class="relative bg-white dark:bg-primary-dark rounded-2xl py-8">
                     <div class="p-4 md:p-5 text-center space-x-4">
                       <svg class="mx-auto mb-4 text-corn-flower-blue w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
-                      <h3 class="mb-12 text-lg font-normal text-deep-koamaru">Are you sure you want to Logout?</h3>
-                      <a href="../models/logout.php/" data-modal-hide="sign-out-modal" type="button" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
+                      <h3 class="mb-12 text-lg font-normal">Are you sure you want to Logout?</h3>
+                      <a href="../index.php" data-modal-hide="sign-out-modal" type="button" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
                         Yes
                       </a>
                       <button data-modal-hide="sign-out-modal" type="button" class="text-deep-koamaru bg-transparent border border-purple-blue hover:bg-ghost-lavender focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">No</button>
@@ -219,7 +221,7 @@
         </li>
       </ul>
       <!-- Bottom Side -->
-      <ul class="space-y-1 font-medium">
+      <ul class="space-y-1 font-medium border-lavender-blue dark:border-dark-lavender-blue border-t pt-4">
         <li>
           <!-- Notification -->
           <a href="#" class="nav-btn group">
@@ -250,10 +252,12 @@
         </li>
         <li class="pt-4">
           <!-- Student Information Card -->
-          <div class="border border-indigo-300 dark:border-slate-700 flex items-center p-4 gap-3 bg-ghost-lavender dark:bg-dark-ghost-lavender rounded-lg">
-            <img class="w-9 h-auto rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+          <div class="info-card">
+            <div class="avatar-container">
+              <span class="font-medium text-white">JD</span>
+            </div>
             <div class="space-y-1">
-              <span class=" text-sm block text-neon-blue dark:text-dark-neon-blue font-bold">Juan Dela Cruz</span>
+              <span class="text-sm block text-neon-blue dark:text-dark-neon-blue font-bold">Juan Dela Cruz</span>
               <p class="text-xs text-deep-koamaru font-thin">juan.dc.12@gmail.com</p>
             </div>
           </div>
