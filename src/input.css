@@ -68,6 +68,10 @@
     @apply fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue dark:bg-dark-lav-sant 
     dark:border-dark-lavender-blue;
   }
+  /* Logo Title */
+  .logo-title {
+    @apply self-center text-xl font-semibold sm:text-lg whitespace-nowrap text-corn-flower-blue dark:text-dark-corn-koamaru;
+  }
   /* User Menu */
   .user-menu {
     @apply z-10 hidden bg-white dark:bg-primary-dark divide-y divide-slate-100 dark:divide-slate-700 rounded-2xl drop-shadows dark:shadow-sm w-56;
@@ -76,7 +80,7 @@
   .user-menu-btn {
     @apply px-4 py-2 transition duration-300 ease-in-out;
     &:hover {
-      @apply text-neon-blue bg-ghost-white dark:text-dark-neon-blue dark:bg-[#263347];
+      @apply text-neon-blue bg-ghost-white dark:text-dark-neon-blue dark:bg-dark-hover;
     }
   }
   /* Profile/Avatar Container */
@@ -93,6 +97,34 @@
     }
     &:focus {
       @apply outline-none text-neon-blue dark:text-dark-neon-blue bg-ghost-lavender dark:bg-dark-ghost-lavender;
+    }
+  }
+  /* Notification Container */
+  .notif-container {
+    @apply z-20 hidden w-full max-w-sm bg-white dark:bg-primary-dark divide-y divide-indigo-100 dark:divide-slate-700 
+    rounded-2xl drop-shadows dark:shadow-md;
+  }
+  /* Notif Header */
+  .notif-header {
+    @apply block px-4 py-2 font-medium text-center text-deep-koamaru dark:text-dark-corn-koamaru rounded-t-2xl bg-white
+    dark:bg-primary-dark;
+  }
+  /* Notif Content */
+  .notif-content {
+    @apply flex px-4 py-3 transition duration-300 ease-in-out;
+    &:hover {
+      @apply bg-lav-sant dark:bg-dark-hover;
+    }
+  }
+  .notif-indicator {
+    @apply absolute flex items-center justify-center w-5 h-5 ms-6 -mt-5 bg-lime-600 border border-white rounded-full;
+  }
+  /* Notification Footer */
+  .notif-footer {
+    @apply block py-2 text-sm font-medium text-center text-deep-koamaru dark:text-dark-corn-koamaru rounded-b-2xl bg-white 
+    dark:bg-primary-dark transition duration-300 ease-in-out;
+    &:hover {
+      @apply bg-lav-sant dark:bg-dark-hover text-neon-blue dark:text-dark-neon-blue;
     }
   }
   /* -------------------- // Navbar -------------------- */

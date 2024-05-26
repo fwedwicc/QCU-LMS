@@ -12,6 +12,7 @@ module.exports = {
         "primary-dark": "#1E293B", // Opposite for white in light mode
         "ghost-white": "#F4F4FF", // Background & Input Color
         "dark-ghost": "#111827",
+        "dark-hover": "#263347", // Hover on dark mode
         "corn-flower-blue": "#4E4C76", // Heading
         "deep-koamaru": "#36355C", // Paragraph
         "dark-corn-koamaru": "#D6D6F7",
