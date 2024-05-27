@@ -63,10 +63,10 @@
             <div class="notif-header">
               Notifications
             </div>
-            <!-- Static Notification Content -->
-            <?php
-            include_once './notifications.php';
-            ?>
+            <!-- Notification Content -->
+            <div id="notification-container" class="divide-y divide-indigo-100 dark:divide-slate-700">
+              
+            </div>
             <a href="#" class="notif-footer hover:text-neon-blue group">
               <div class="inline-flex items-center">
                 <svg class="w-4 h-4 me-2 group-hover:text-neon-blue duration-75 transitione ease-in-out" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
@@ -212,6 +212,7 @@
   </aside>
   <!-- // Left Sidebar -->
 
+  <script src="./notifications.js"></script>
   <!-- Toggle Mode Script -->
   <script src="../../controller/toggle-mode.js"></script>
   <!-- Sidebar Script -->
