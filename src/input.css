@@ -74,7 +74,8 @@
   }
   /* User Menu */
   .user-menu {
-    @apply z-10 hidden bg-white dark:bg-primary-dark divide-y divide-slate-100 dark:divide-slate-700 rounded-2xl drop-shadows dark:shadow-sm w-56;
+    @apply z-10 hidden bg-white dark:bg-primary-dark divide-y divide-slate-100 dark:divide-slate-700 rounded-2xl 
+    drop-shadows dark:shadow-lg w-56;
   }
   /* User Menu Buttons */
   .user-menu-btn {
@@ -233,6 +234,24 @@
   .announcement-header {
     @apply border-purple-blue dark:border-slate-700 border-b border-solid bg-ghost-lavender dark:bg-dark-ghost-lavender 
     flex items-center py-4 pl-7 gap-2.5;
+  }
+  /* Subject Card Container */
+  .subject-container {
+    @apply relative block p-6 bg-white dark:bg-primary-dark rounded-2xl transition duration-300 ease-in-out col-span-1 
+    overflow-y-auto border-b-4 border-transparent;
+    &:hover {
+      @apply border-neon-blue dark:border-dark-neon-blue shadow-[15px_15px_30px_-3px_rgba(224,227,246)] dark:shadow-none;
+    }
+  }
+  /* Subject Code */
+  .subject-code {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold 
+    tracking-tight text-white dark:text-white;
+  }
+  /* Subject Semester Indicator */
+  .subject-sem {
+    @apply mt-4 inline-flex items-center bg-ghost-lavender dark:bg-dark-hover text-neon-blue dark:text-dark-neon-blue
+    text-sm font-medium px-4 py-2 rounded-full;
   }
 }
 
