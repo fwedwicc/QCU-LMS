@@ -228,7 +228,34 @@
 }
 
 
-
+/* Jscript Calender */
+.jcalendar-table table {
+  @apply bg-white dark:bg-primary-dark;
+}
+.jcalendar-selected {
+  @apply bg-neon-blue dark:bg-dark-neon-blue;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+.jcalendar-weekday {
+  @apply text-neon-blue bg-ghost-white dark:text-dark-neon-blue dark:bg-dark-hover font-bold;
+}
+.jcalendar-prev,
+.jcalendar-next {
+  @apply opacity-0;
+}
+.jcalendar-header {
+  @apply text-neon-blue dark:text-dark-neon-blue;
+}
+.jcalendar-content {
+  font-size: 14px;
+  font-weight: 400;
+  @apply text-deep-koamaru dark:text-dark-corn-koamaru;
+}
+.jcalendar-table {
+  padding: 0;
+  height: 0px;
+}
 
 /* Container Shadow */
 .drop-shadows {
@@ -244,27 +271,29 @@
   height: 30px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c4bffd;
+  /* background: #c4bffd; */
+  @apply bg-[#c4bffd] dark:bg-dark-ghost-lavender;
   border: 0px none #EDEDFF;
   border-radius: 100px;
 }
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #c4bffd;
 }
 ::-webkit-scrollbar-thumb:active {
   background: #c4bffd;
-}
+} */
 ::-webkit-scrollbar-track {
-  background: #EDEDFF;
+  /* background: #EDEDFF; */
+  @apply dark:bg-dark-ghost;
   border: 0px none #EDEDFF;
   border-radius: 100px;
 }
-::-webkit-scrollbar-track:hover {
+/* ::-webkit-scrollbar-track:hover {
   background: #EDEDFF;
 }
 ::-webkit-scrollbar-track:active {
   background: #EDEDFF;
-}
+} */
 ::-webkit-scrollbar-corner {
   background: transparent;
 }

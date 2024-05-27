@@ -12,32 +12,6 @@
   <!-- Jsuites Link -->
   <script src="https://jsuites.net/v4/jsuites.js"></script>
   <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
-  <style>
-    .jcalendar-selected {
-      background-color: #4F46E5 !important;
-      border-radius: 0.5rem;
-      color: #ffffff;
-    }
-
-    .jcalendar-weekday {
-      color: #4F46E5;
-      font-weight: bold;
-    }
-
-    .jcalendar-header {
-      color: #4F46E5;
-    }
-
-    .jcalendar-content {
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .jcalendar-table {
-      padding: 0;
-      height: 0px;
-    }
-  </style>
 </head>
 <!-- Student side/navigation bar -->
 <?php
@@ -49,7 +23,7 @@ include_once './side-nav-bar.php';
     <div class="pt-4 pl-4 mt-[4rem]">
       <!-- General Announcement Container -->
       <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4">
-        <span class="border-purple-blue border-b border-solid block bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
+        <span class="border-purple-blue border-b border-solid bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
           <svg class="w-6 h-6 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M18.458 3.11A1 1 0 0 1 19 4v16a1 1 0 0 1-1.581.814L12 16.944V7.056l5.419-3.87a1 1 0 0 1 1.039-.076ZM22 12c0 1.48-.804 2.773-2 3.465v-6.93c1.196.692 2 1.984 2 3.465ZM10 8H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6V8Zm0 9H5v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3Z" clip-rule="evenodd" />
           </svg>
@@ -67,7 +41,7 @@ include_once './side-nav-bar.php';
         </div>
       </div>
       <!--  Enrolled Course -->
-      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>
+      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Subjects</h1>
       <div class="grid grid-cols-2 gap-5 mb-6" id='draggable-elements'>
         <!-- Course Card -->
         <a href="./student-course-overview.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
@@ -134,10 +108,10 @@ include_once './side-nav-bar.php';
     </div>
   </div>
   <!-- Right Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 right-0 z-30 w-[22rem] h-screen pt-24 transition-transform -translate-x-full bg-ghost-white dark:bg-dark-ghost sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
+  <aside id="sidebar" class="fixed top-0 right-0 z-30 w-[22rem] h-screen pt-24 transition-transform -translate-x-full bg-ghost-white dark:bg-dark-ghost sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
     <div class="h-full pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white dark:bg-dark-ghost grid grid-rows-2">
       <!-- Calendar card -->
-      <div class="block max-w-sm px-5 pt-9 bg-white dark:bg-primary-dark rounded-2xl drop-shadows dark:shadow-sm row-span-1 md:overflow-y-hidden">
+      <div class="block max-w-sm px-5 pt-3 bg-white dark:bg-primary-dark rounded-2xl drop-shadows dark:shadow-sm row-span-1 md:overflow-y-hidden">
         <div id='calendar'></div>
       </div>
       <!-- Todo card -->
