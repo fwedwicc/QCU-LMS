@@ -65,7 +65,7 @@
             </div>
             <!-- Notification Content -->
             <div id="notification-container" class="divide-y divide-indigo-100 dark:divide-slate-700">
-              
+
             </div>
             <a href="#" class="notif-footer hover:text-neon-blue group">
               <div class="inline-flex items-center">
@@ -211,8 +211,8 @@
     </div>
   </aside>
   <!-- // Left Sidebar -->
-
-  <script src="./notifications.js"></script>
+  <!-- Notification Content Script -->
+  <script src="./notification.js"></script>
   <!-- Toggle Mode Script -->
   <script src="../../controller/toggle-mode.js"></script>
   <!-- Sidebar Script -->

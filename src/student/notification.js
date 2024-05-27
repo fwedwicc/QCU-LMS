@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../data/notification.json')
+  fetch('../JSON/notification.json')
     .then(response => response.json())
     .then(notifications => {
       const container = document.getElementById('notification-container');

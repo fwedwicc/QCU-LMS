@@ -70,6 +70,7 @@ include_once './side-nav-bar.php';
       }
     });
   </script>
+  <!-- Subject Card Content Script -->
   <script src="./subject-card.js"></script>
   <!-- Jsuites CDN -->
   <script src="https://jsuites.net/v4/jsuites.js"></script>

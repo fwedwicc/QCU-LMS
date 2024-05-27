@@ -23,7 +23,7 @@ function createCourseCard(course) {
 const courseCardsContainer = document.getElementById('course-cards');
 
 // Fetch the subject-card.json data
-fetch('../data/subject-card.json')
+fetch('../JSON/subject-card.json')
   .then(response => response.json())
   .then(courses => {
     courses.forEach(course => {
