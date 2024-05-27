@@ -21,6 +21,7 @@ include_once './side-nav-bar.php';
 <body>
   <div class="p-4 sm:ml-64 sm:mr-[22rem]">
     <div class="pt-4 pl-4 mt-[4rem]">
+      <!-- TODO: Buttons for overall view for general announcement -->
       <!-- General Announcement -->
       <div class="announcement-container">
         <span class="announcement-header">
@@ -56,6 +57,7 @@ include_once './side-nav-bar.php';
         <div id='calendar'></div>
       </div>
       <!-- Todo card -->
+      <!-- FIXME: Todo Card -->
       <?php
       // include 'todo-card.php';
       ?>
