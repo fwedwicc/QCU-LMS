@@ -1,0 +1,34 @@
+[
+  {
+    "link": "./student-course-overview.php",
+    "code": "SE101",
+    "title": "Software Engineering",
+    "instructor": "Mary Anne Manandeg",
+    "section": "SBIT-2B",
+    "semester": "2nd Semester"
+  },
+  {
+    "link": "./student-course-overview.php",
+    "code": "CS102",
+    "title": "Computer Science",
+    "instructor": "John Doe",
+    "section": "CSIT-3A",
+    "semester": "1st Semester"
+  },
+  {
+    "link": "./student-course-overview.php",
+    "code": "IT103",
+    "title": "Information Technology",
+    "instructor": "Jane Smith",
+    "section": "IT-1C",
+    "semester": "2nd Semester"
+  },
+  {
+    "link": "./student-course-overview.php",
+    "code": "DS104",
+    "title": "Data Science",
+    "instructor": "James Brown",
+    "section": "DS-4D",
+    "semester": "1st Semester"
+  }
+]

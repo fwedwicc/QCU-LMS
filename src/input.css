@@ -225,6 +225,15 @@
     md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender dark:bg-slate-900 
     dark:bg-opacity-50 bg-opacity-50;
   }
+  /* General Announcement Container */
+  .announcement-container {
+    @apply block rounded-2xl border border-purple-blue dark:border-slate-700 overflow-y-auto space-y-4;
+  }
+  /* General Announcement Header */
+  .announcement-header {
+    @apply border-purple-blue dark:border-slate-700 border-b border-solid bg-ghost-lavender dark:bg-dark-ghost-lavender 
+    flex items-center py-4 pl-7 gap-2.5;
+  }
 }
 
 
@@ -271,29 +280,15 @@
   height: 30px;
 }
 ::-webkit-scrollbar-thumb {
-  /* background: #c4bffd; */
   @apply bg-[#c4bffd] dark:bg-dark-ghost-lavender;
   border: 0px none #EDEDFF;
   border-radius: 100px;
 }
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #c4bffd;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #c4bffd;
-} */
 ::-webkit-scrollbar-track {
-  /* background: #EDEDFF; */
   @apply dark:bg-dark-ghost;
   border: 0px none #EDEDFF;
   border-radius: 100px;
 }
-/* ::-webkit-scrollbar-track:hover {
-  background: #EDEDFF;
-}
-::-webkit-scrollbar-track:active {
-  background: #EDEDFF;
-} */
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
