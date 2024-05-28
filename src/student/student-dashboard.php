@@ -50,14 +50,13 @@ include_once './side-nav-bar.php';
     </div>
   </div>
   <!-- Right Sidebar -->
-  <aside id="sidebar" class="fixed top-0 right-0 z-30 w-[22rem] h-screen pt-24 transition-transform -translate-x-full bg-ghost-white dark:bg-dark-ghost sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
-    <div class="h-full pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white dark:bg-dark-ghost grid grid-rows-2">
+  <aside id="sidebar" class="right-sidebar" aria-label="Sidebar">
+    <div class="right-sidebar-cont">
       <!-- Calendar card -->
-      <div class="block max-w-sm px-5 pt-3 bg-white dark:bg-primary-dark rounded-2xl drop-shadows dark:shadow-sm row-span-1 md:overflow-y-hidden">
+      <div class="container">
         <div id='calendar'></div>
       </div>
       <!-- Todo card -->
-      <!-- FIXME: Todo Card -->
       <?php
       include './todo-card.php';
       ?>
