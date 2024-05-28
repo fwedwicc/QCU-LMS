@@ -14,7 +14,7 @@
 <?php
 include_once './side-nav-bar.php';
 ?>
-
+<!-- FIXME: Student Settings -->
 <body>
   <div class="p-4 sm:ml-64">
     <div class="pt-4 px-5 rounded-2xl mt-14">

@@ -59,7 +59,7 @@ include_once './side-nav-bar.php';
       <!-- Todo card -->
       <!-- FIXME: Todo Card -->
       <?php
-      // include 'todo-card.php';
+      include './todo-card.php';
       ?>
     </div>
   </aside>

@@ -2719,6 +2719,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
   resize: both;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -3077,6 +3081,10 @@ p:is(.dark *), h3:is(.dark *), h5:is(.dark *), label:is(.dark *) {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-2 {
