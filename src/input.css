@@ -274,6 +274,25 @@
       @apply bg-ghost-lavender dark:bg-slate-700 text-neon-blue dark:text-dark-neon-blue;
     }
   }
+  /* Tab Wrapper */
+  .tab-wrapper {
+    @apply flex flex-wrap -mb-px text-sm font-medium text-center transition duration-300 ease-in-out;
+  }
+  /* Tab Button */
+  .tab-btn {
+    @apply inline-block px-4 py-2 transition duration-300 ease-in-out border-b-2 rounded-t-lg;
+    &:hover {
+      @apply bg-ghost-lavender dark:bg-dark-ghost-lavender;
+    }
+  }
+  /* Tab Button Active */
+  .tab-btn-active {
+    @apply text-neon-blue dark:text-dark-neon-blue border-neon-blue dark:border-dark-neon-blue 
+    bg-ghost-lavender dark:bg-dark-ghost-lavender;
+  }
+  .tab-btn-inactive {
+    @apply text-moody-blue dark:text-slate-600 border-slate-300 dark:border-slate-600;
+  }
 }
 
 
