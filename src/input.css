@@ -303,7 +303,20 @@
     px-3 py-1 rounded-md;
   }
   .settings-label {
-    @apply block text-slate-500 dark:text-slate-400 text-sm;
+    @apply block text-slate-500 dark:text-slate-400;
+  }
+  /* Secondary Container for Settings */
+  .secondary-container {
+    @apply block rounded-2xl bg-white dark:bg-primary-dark shadow-[10px_10px_30px_-16px_rgba(224,227,246)] dark:shadow-none 
+    overflow-y-auto space-y-4 p-8;
+  }
+  /* Heading For Settings */
+  .settings-heading {
+    @apply text-2xl font-medium text-corn-flower-blue dark:text-dark-corn-koamaru;
+  }
+  /* Data typography for settings */
+  .settings-data {
+    @apply block text-deep-koamaru dark:text-dark-corn-koamaru font-medium;
   }
 }
 

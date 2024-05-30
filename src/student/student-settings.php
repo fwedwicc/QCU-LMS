@@ -48,7 +48,7 @@ include_once './side-nav-bar.php';
                 </div>
                 <div class="space-y-2 text-center">
                   <span class="settings-number">22-2808</span>
-                  <span class="settings-label">Student number</span>
+                  <span class="settings-label text-sm">Student number</span>
                 </div>
               </div>
             </div>
@@ -56,79 +56,79 @@ include_once './side-nav-bar.php';
             <div class="grid gap-6 mb-6 grid-cols-3">
               <!-- Personal -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
-                  <h5 class="text-2xl font-medium text-corn-flower-blue">Personal Information</h5>
+                <div class="secondary-container">
+                  <h5 class="settings-heading">Personal Information</h5>
                   <div class="grid grid-cols-5 pt-4">
                     <!-- First -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">First name</span>
-                      <span class="block text-deep-koamaru font-medium">Frederick</span>
+                      <span class="settings-label">First name</span>
+                      <span class="settings-data">Frederick</span>
                     </div>
                     <!-- Middle Name  -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Middle name</span>
-                      <span class="block text-deep-koamaru font-medium">Capiral</span>
+                      <span class="settings-label">Middle name</span>
+                      <span class="settings-data">Capiral</span>
                     </div>
                     <!-- Last Name -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Last name</span>
-                      <span class="block text-deep-koamaru font-medium">Moreno</span>
+                      <span class="settings-label">Last name</span>
+                      <span class="settings-data">Moreno</span>
                     </div>
                     <!-- Suffix -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Suffix</span>
-                      <span class="block text-deep-koamaru font-medium"></span>
+                      <span class="settings-label">Suffix</span>
+                      <span class="settings-data"></span>
                     </div>
                     <!-- Date of Birth -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Date of Birth</span>
-                      <span class="block text-deep-koamaru font-medium">July 17, 2003</span>
+                      <span class="settings-label">Date of Birth</span>
+                      <span class="settings-data">July 17, 2003</span>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Academic -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
-                  <h5 class="text-2xl font-medium text-corn-flower-blue">Academic Information</h5>
+                <div class="secondary-container">
+                  <h5 class="settings-heading">Academic Information</h5>
                   <div class="grid grid-cols-5 pt-4">
                     <!-- Program -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Program</span>
-                      <span class="block text-deep-koamaru font-medium">BSIT</span>
+                      <span class="settings-label">Program</span>
+                      <span class="settings-data">BSIT</span>
                     </div>
                     <!-- Year Level  -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Year Level</span>
-                      <span class="block text-deep-koamaru font-medium">Irregular</span>
+                      <span class="settings-label">Year Level</span>
+                      <span class="settings-data">Irregular</span>
                     </div>
                     <!-- Classification -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Classification</span>
-                      <span class="block text-deep-koamaru font-medium">Irregular</span>
+                      <span class="settings-label">Classification</span>
+                      <span class="settings-data">Irregular</span>
                     </div>
                     <!-- Section -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Section</span>
-                      <span class="block text-deep-koamaru font-medium">SBIT-2B</span>
+                      <span class="settings-label">Section</span>
+                      <span class="settings-data">SBIT-2B</span>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Account -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
-                  <h5 class="text-2xl font-medium text-corn-flower-blue">Account Information</h5>
+                <div class="secondary-container">
+                  <h5 class="settings-heading">Account Information</h5>
                   <div class="grid grid-cols-7 pt-4">
                     <!-- Email Address -->
                     <div class="space-y-2.5 col-span-1">
-                      <span class="block text-slate-500">Email Address</span>
-                      <span class="block text-deep-koamaru font-medium">moreno.frederick.capiral@gmail.com</span>
+                      <span class="settings-label">Email Address</span>
+                      <span class="settings-data">moreno.frederick.capiral@gmail.com</span>
                     </div>
                     <!-- Username  -->
                     <div class="space-y-2.5 col-start-3">
-                      <span class="block text-slate-500">Username</span>
-                      <span class="block text-deep-koamaru font-medium">20030717222808</span>
+                      <span class="settings-label">Username</span>
+                      <span class="settings-data">20030717222808</span>
                     </div>
                   </div>
                 </div>
