@@ -293,6 +293,18 @@
   .tab-btn-inactive {
     @apply text-moody-blue dark:text-slate-600 border-slate-300 dark:border-slate-600;
   }
+  /* Primary Container for Settings */
+  .primary-container {
+    @apply inline-flex rounded-2xl bg-white dark:bg-primary-dark drop-shadows dark:shadow-lg overflow-y-auto space-y-4;
+  }
+  /* Settings Employee/Student Number */
+  .settings-number {
+    @apply text-neon-blue dark:text-dark-neon-blue font-bold text-2xl bg-ghost-lavender dark:bg-dark-hover 
+    px-3 py-1 rounded-md;
+  }
+  .settings-label {
+    @apply block text-slate-500 dark:text-slate-400 text-sm;
+  }
 }
 
 

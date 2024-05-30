@@ -14,7 +14,8 @@
 <?php
 include_once './side-nav-bar.php';
 ?>
-<!-- FIXME: Student Settings -->
+<!-- FIXME: Student Settings & Data -->
+
 <body>
   <div class="p-4 sm:ml-64">
     <div class="pt-4 px-5 rounded-2xl mt-14">
@@ -39,18 +40,15 @@ include_once './side-nav-bar.php';
         <div id="tab-content" class="pb-6">
           <!-- Account Profile Tab -->
           <div class="hidden space-y-5" id="account-profile" role="tabpanel" aria-labelledby="account-profile-tab">
-            <h1 class="text-4xl font-bold text-corn-flower-blue mb-8">
-              Account Profile
-            </h1>
             <!-- Student number -->
-            <div class="inline-flex rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4">
+            <div class="primary-container">
               <div class="px-8 py-5 flex items-center gap-5">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-corn-flower-blue">
-                  <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
-                </svg>
+                <div class="avatar-container w-24 h-24">
+                  <span class="font-medium text-white text-3xl">JD</span>
+                </div>
                 <div class="space-y-2 text-center">
-                  <span class="text-neon-blue font-bold text-2xl bg-ghost-lavender px-3 py-1 rounded-md">22-2808</span>
-                  <span class="block text-slate-500 text-sm">Student number</span>
+                  <span class="settings-number">22-2808</span>
+                  <span class="settings-label">Student number</span>
                 </div>
               </div>
             </div>
