@@ -184,8 +184,7 @@
   /* -------------------- Forms -------------------- */
   /* Input Field */
   .input-field {
-    @apply bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md block p-2.5 
-    placeholder-moody-blue transition ease-in-out duration-300;
+    @apply bg-ghost-white dark:bg-dark-ghost border border-lavender dark:border-slate-700 text-deep-koamaru dark:text-dark-corn-koamaru text-sm rounded-md block p-2.5 placeholder-moody-blue dark:placeholder-slate-600 transition ease-in-out duration-300;
   } &:focus {
     @apply ring-neon-blue border-neon-blue;
   }
