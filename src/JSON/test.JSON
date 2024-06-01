@@ -1,0 +1,30 @@
+[
+  {
+    "code": "SE101",
+    "title": "Software Engineering",
+    "learningOutcomes": "Can apply the basic technology on internet and on website that incorporates using various technology. Can create and design a website using HTML.",
+    "topics": ["Mission", "Vision", "Course Syllabus", "Grading System", "Class Policies", "Course Requirements"],
+    "learningMaterials": [
+      {"name": "Week 1 - PowerPoint Presentation", "link": "#"},
+      {"name": "Week 1 - Additional PDF Materials", "link": "#"}
+    ],
+    "assessmentsTasks": [
+      {"name": "Laboratory Activity 1", "link": "./student-activity.php"},
+      {"name": "Assignment 1", "link": "#"}
+    ]
+  },
+  {
+    "code": "CS101",
+    "title": "Computer Science 101",
+    "learningOutcomes": "Understanding of basic computer science principles and programming concepts.",
+    "topics": ["Introduction", "History", "Basic Concepts"],
+    "learningMaterials": [
+      {"name": "Week 1 - Lecture Notes", "link": "#"},
+      {"name": "Week 1 - Reading Material", "link": "#"}
+    ],
+    "assessmentsTasks": [
+      {"name": "Homework 1", "link": "./student-activity.php"},
+      {"name": "Quiz 1", "link": "#"}
+    ]
+  }
+]

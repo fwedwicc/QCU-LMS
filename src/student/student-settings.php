@@ -14,7 +14,7 @@
 <?php
 include_once './side-nav-bar.php';
 ?>
-<!-- FIXME: Student Settings & Data -->
+<!-- FIXME: Account Profile Data -->
 
 <body>
   <div class="p-4 sm:ml-64">
