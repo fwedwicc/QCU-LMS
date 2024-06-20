@@ -11,6 +11,8 @@ window.onload = function () {
 
   if (filename === 'student-dashboard.php') {
     applyClasses('dashboard-btn', 'dashboard-icon');
+  } else if (filename === 'student-course-overview.php') {
+    applyClasses('subject-btn', 'subject-icon');
   } else if (filename === 'student-settings.php') {
     applyClasses('settings-btn', 'settings-icon');
   }
